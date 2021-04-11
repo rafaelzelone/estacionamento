@@ -1,0 +1,33 @@
+{% extends "estacionamento/base.html" %}
+
+
+{% block title %}inicio Estacionamento{% endblock %}
+
+{% block content %}
+        
+        <div class ="cabecario">
+        
+        <p>Estacionamento</p>
+        </div>
+        <div class="preco">
+        -------preços--------</br>
+        -- 1 hr -----  4,80  --</br>
+        -- 1 min ---- 0,08  -- </br>
+        -- 1 dia ---- 20,00 -- </br>
+        -----------------------
+
+        </div>
+        <div class="entrada">Entrada</div>
+        <div class ="formulario">
+     
+        <form method="Carro" class="carro-form">
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>   
+       
+         </form>
+          
+        </div>
+        <div class="button">
+        <a href="/admin/estacionamento/carro/add/"><button>Admin</button></a>
+        </div>
+{% endblock %}
